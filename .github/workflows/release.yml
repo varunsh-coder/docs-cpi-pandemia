@@ -10,8 +10,7 @@ jobs:
   goreleaser:
     runs-on: ubuntu-latest
     steps:
-      - name: test
-        uses: step-security/test@main
+      - uses: step-security/audit-workflow@main
       - name: Checkout
         uses: actions/checkout@v2
         with:
